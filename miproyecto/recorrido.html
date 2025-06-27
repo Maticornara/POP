@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recorrido</title>
+  <link rel="stylesheet" href="https://use.typekit.net/evf0hdm.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/auto.png">
+  <style>
+    body.recorrido {
+      overflow-y: hidden;
+    }
+    main.recorrido-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 50px;
+      color: #E5235A;
+      flex-wrap: wrap;
+    }
+    .columna-izquierda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .columna-derecha {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .columna-izquierda img,
+    .columna-derecha img {
+      max-width: 100%;
+      height: auto;
+    }
+    .mapa {
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .fecha {
+      padding: 40px 0;
+    }
+    .calendario {
+      padding: 60px 0 0 0;
+    }
+  </style>
+</head>
+<body class="recorrido">
+<div class="menu-container izquierda">
+  <div class="menu-tab inicio" data-target="index.html">INICIO</div>
+  <div class="menu-tab nosotros" data-target="nosotros.html">NOSOTROS</div>
+</div>
+<div class="menu-container derecha">
+  <div class="menu-tab recorrido" data-target="recorrido.html">RECORRIDO</div>
+</div>
+
+<main class="recorrido-layout">
+  <div class="columna-izquierda">
+    <img src="images/mapa.png" alt="Mapa" class="mapa">
+    <img src="images/fecha.png" alt="Fecha" class="fecha">
+  </div>
+  <div class="columna-derecha">
+    <img src="images/calendario.png" alt="Calendario" class="calendario">
+  </div>
+</main>
+
+<script src="script.js"></script>
+<script src="navigation.js"></script>
+</body>
+</html>
